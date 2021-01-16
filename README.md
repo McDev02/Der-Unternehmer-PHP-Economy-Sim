@@ -11,5 +11,5 @@ Password: K4m572NDaQBYkZhN
 ## Database
 The database (in the database folder) was exported with default settings from phpMyAdmin with two different encodings.
 
-![Preview](https://github.com/McDev02/Der-Unternehmer-PHP-Economy-Sim/blob/master/preview.jpg?raw=true)
-![Preview](https://github.com/McDev02/Der-Unternehmer-PHP-Economy-Sim/blob/master/preview2.jpg?raw=true)
+![Preview](https://github.com/McDev02/Der-Unternehmer-PHP-Economy-Sim/blob/main/preview.jpg?raw=true)
+![Preview](https://github.com/McDev02/Der-Unternehmer-PHP-Economy-Sim/blob/main/preview2.jpg?raw=true)
