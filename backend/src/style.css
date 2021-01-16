@@ -1,0 +1,635 @@
+/* General -------------------------- */
+
+body{
+	background-color: #78a9c8;
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+	font-family: Verdana, sans-serif;
+}
+
+#main-background-image-wrapper{
+	width: 100%;
+    height: 100%;
+    min-height: 120px;
+    max-height: 680px;
+    min-width: 200px;
+    position: absolute;
+    bottom: 0px;
+    z-index: -100;
+}
+#main-background-image{
+	width: 100%;
+    height: 100%;
+    
+	 background: url(./img/background_big.jpg) no-repeat bottom center fixed; 
+	  -webkit-background-size: inherit;
+	  -moz-background-size: inherit;
+	  -o-background-size: inherit;
+	  background-size: inherit;
+}
+
+.default{
+	font-weight: initial;
+}
+
+a{
+	color: $main-font-color$;
+    text-decoration: none;	
+    font-weight: bold;
+    cursor: initial;
+}
+a:hover{
+	color: $orange-color$;
+	text-decoration: none;
+}
+
+hr{
+	margin: 12px 0 8px 0;
+	border-color: $blue-color$;
+}
+
+h1{
+	
+}
+h2{
+	
+}
+h3{
+	padding: 0;
+	margin: 10px 0 6px 0;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.inherit{
+	font: inherit;
+	font-weight: initial;
+	color: inherit;
+	text-decoration: inherit;
+}
+.inherit:hover{
+	font: inherit;
+	font-weight: initial;
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.highlighted{
+	color: $main-font-color$;
+	font-size: inherit;
+	font-weight: bold;	
+}
+
+.hide {
+  display: none;
+}
+
+.nopadding{
+	padding: 0;
+}
+.smallpadding{
+	padding: 4px;
+}
+
+.right{
+	text-align: right;
+}
+
+table{
+	width: 100%;
+	font-size: 12px;
+}
+td, th{
+	padding: 2px 0;
+}
+
+
+/* Scrollbar -------------*/
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px;
+}
+::-webkit-scrollbar-thumb {
+  background: $blue-color$;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #40b5ff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #40b5ff;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border: 0px none $blue-color$;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-track:hover {
+  background: white;
+}
+::-webkit-scrollbar-track:active {
+  background: white;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.window-title{
+	height: 36px;
+	background-color: $blue-color$;
+	color: #ffffff;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 0.6em;
+	padding-bottom: 4px;
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+.window-title-bar{
+	height: 36px;
+	background-color: $blue-color$;
+	color: #ffffff;
+	width: 100%;
+	text-align: left;
+	font-weight: bold;
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+.window-title-content {
+	height: 100%;
+    float: left;
+	padding: 0.6em 0 0 8px;
+}
+
+.widget-title{
+	height: 28px;
+	background-color: $blue-color$;
+	color: #ffffff;
+	width: 100%;
+	text-align: left;
+	font-weight: bold;
+	padding: 0.35em 0 4px 8px;
+	font-size: 14px;
+}
+
+.widget-content{
+	padding: 4px;
+}
+
+.block{
+	display: inline-block;
+	width: 100%;
+}
+
+#main-container{
+    min-width: 332px;
+	max-width: 1140px;
+	padding: 2px 0 0 0;
+	margin: 0px auto;
+	margin-top: 5px;
+	font-size: 14px;
+	background-color: rgba(60, 120, 160, 0.8);
+}
+
+
+
+/* Forms ------------------------ */
+.form-input-small{
+	height: 24px;
+    border: 1px solid #15a4ff;
+}
+
+.form-nobutton{
+    background: none;
+    border: none;
+    font-weight: bold;
+    padding:0;
+}
+.form-nobutton:hover{
+	color:$orange-color$;
+}
+.form-window{
+	font-size: 12px;
+	color: #0080d2;
+	color: $main-font-color$;
+	background-color: #ffffff;
+	margin: 10px 10px;
+	display: inline-block;
+}
+.form-window-title{
+	height: 36px;
+	background-color: $blue-color$;
+	color: #ffffff;
+	width: 100%;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 0.6em;
+	padding-bottom: 4px;
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+.form-row{
+	padding: 0;
+	min-height: 32px;
+}
+.form-field{
+}
+.form-radio{
+	margin-left: 8px;
+}
+.form-label{
+	float: left;
+	width: 100px;
+}
+.form-info{
+	vertical-align: middle;
+	height: 100%;
+}
+.form-submit{
+	float: right;
+	width: inherit;
+	margin-right: 10px;
+	color: $main-font-color$;
+    background-color: #ffffff;
+    border: none;
+    display: flex;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+
+#mainmenu-footer {
+    border-top: 2px solid $blue-color$;
+    padding: 10px 10px 2px 10px;
+    margin: 0 15px;
+}
+
+/* Main Menu ------------------------ */
+.mainmenu-container {
+	cursor: default;
+	color: $main-font-color$;
+    list-style-type: none;
+    min-height: 42px;
+    margin: 10px 15px 15px 15px;
+    padding: 0 6px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.mainmenu-infobox {
+	height: inherit;
+    float: right;
+    font-size: 11px;
+    padding-top: 6px;
+}
+.mainmenu-info-top{
+    }
+#mainmenu-info-account{
+    float: left;
+	width: 176px;
+    }
+#mainmenu-info-balance{
+    float: left;
+	width: 140px;
+    }
+#mainmenu-infotext{
+    font-size: 10px;
+	width: 316px;
+    }
+
+.mainmenu-entry {
+	height: 42px;
+    float: left;
+    padding: 12px 12px 0 12px;
+}
+.mainmenu-entry-active {
+	height: 42px;
+	border-bottom: 4px solid $blue-color$;
+    float: left;
+    padding: 12px 12px 0 12px;
+}
+.mainmenu-entry-active a {
+	color: $main-font-color$;
+    text-align: center;
+    text-decoration: none;
+}
+
+.mainmenu-entry a {
+	color: $main-font-color$;
+    text-align: center;
+    text-decoration: none;
+}
+
+.mainmenu-entry-inactive {
+	height: 42px;
+    float: left;
+    padding: 12px 12px 0 12px;
+}
+
+.mainmenu-entry-inactive a {
+	color: #adc2d0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.mainmenu-entry-right {
+	height: 42px;
+    float: right;
+    padding: 12px 12px 0 12px;
+}
+
+.mainmenu-entry-right a {
+	color: $main-font-color$;
+    text-align: center;
+    text-decoration: none;
+}
+
+.mainmenu-entry a :hover {
+	color: $orange-color$;
+}
+
+
+.mainmenu-entry-company {
+	height: 42px;
+    float: right;
+	font-size: 14px;
+    padding: 12px 12px 0 12px;
+}
+.mainmenu-entry-company-active {
+	height: 42px;
+	font-size: 14px;
+	border-bottom: 4px solid $blue-color$;
+    float: right;
+    padding: 12px 12px 0 12px;
+}
+
+/* Tabs ------------*/
+.tab-container {
+	cursor: default;
+	color: $main-font-color$;
+    list-style-type: none;
+    height: 100%;
+    float: left;
+    color: white;
+    margin: 0 0 0 1em;
+	padding: 0 6px 0 4px;
+}
+
+.tab-entry {
+	height: 100%;
+    float: left;
+	font-weight: initial;
+	padding: 0.9em 6px 0 6px;
+	font-size: 12px;
+    color: white;
+}
+.tab-entry:hover {
+	font-weight: initial;
+    background-color: white;
+    color: $blue-color$;
+}
+.tab-entry-active {
+	height: 100%;
+    float: left;
+	padding: 0.9em 6px 0 6px;
+	font-size: 12px;
+	font-weight: bold;
+    background-color: white;
+    color: $blue-color$;
+}
+
+/* Lists --------------*/
+.list-vertical-container {
+	width: 100%;
+	cursor: default;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 4px 0 0;
+    overflow-y: auto;
+}
+
+
+
+.list-vertical-entry {
+	width: 100%;
+	height: 22px;
+    padding: 1px 0 0 0;
+	color: $main-font-color$;
+	background-color: $bright-blue-color$;
+    font-size: 11px;
+    border-bottom: 1px solid white;
+}
+.list-vertical-entry:hover {
+	width: 100%;
+	height: 22px;
+	color: white;
+	background-color: $blue-color$;
+}
+
+.list-content {
+	height: 22px;
+    padding: 0 4px;
+    margin: 0;
+}
+.list-content-right {
+	height: 22px;
+    padding: 0 5px;
+    margin: 0;
+    text-align: right;
+}
+
+/* Menues -------------*/
+.menu-container {
+	cursor: default;
+	color: $main-font-color$;
+    list-style-type: none;
+    margin: 5px 15px 5px 15px;
+    padding: 0 6px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.menu-entry {
+    float: left;
+    padding: 0 4px 0 8px;
+}
+
+/* Page ------------------------ */
+.page-infobox{
+	color: $main-font-color$;
+    background-color: #ffffff;
+}
+.page-infotext{
+	text-align: left;
+	font-weight: inherit;
+	font-size: 12px;
+    padding: 6px 15px 15px 14px;
+}
+.page-infotext-highlighted{
+	text-align: center;
+	font-weight: bold;
+	font-size: 12px;
+    padding: 10px 15px;
+}
+.info-caption{
+	font-size: 12px;
+	font-weight: initial;
+	padding: 8px 0 0 0;
+	display: inline-block;
+}
+.page-widget{
+	color: $main-font-color$;
+    background-color: #ffffff;
+    padding: 0;
+    margin-bottom: 15px;
+    border: 1px solid $blue-color$;
+}
+.scrollarea{
+    overflow-y: auto;
+    height: 100%;
+}
+
+.page-sidebar{
+    padding: 6px;
+	border: 1px solid $blue-color$;
+}
+
+/* Map ------------------------------- */
+.map-tile-container{
+	position: relative;
+}
+
+.map-tile-base{
+	background: url(./img/map/tile-grass.png) no-repeat;
+	color: black;
+	width: 48px;
+	height: 42px;
+	position: absolute;
+	display: inherit; 
+}
+.map-tile-base :hover{
+	background: url(./img/map/tile-grass-hover.png) no-repeat;
+	color: red;
+	display: inherit;
+}
+
+.map-tile-ocean{
+	background: url(./img/map/tile-ocean.png) no-repeat;
+	color: black;
+	width: 48px;
+	height: 42px;
+	position: absolute;
+	display: inherit; 
+}
+.map-tile-ocean :hover{
+	background: url(./img/map/tile-ocean-hover.png) no-repeat;
+	display: inherit;
+}
+
+.map-tile-span{
+	width: 100%;
+	height: 100%;
+	cursor: crosshair;
+    display: block;
+}
+.map-tile-clickable{
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+    display: block;
+}
+
+.map-tile-obj{
+	width: 48px;
+	height: 64px;
+	cursor: default;
+    top: -22px;
+    position: absolute;
+    pointer-events: none;
+}
+
+.map-tile-veh{
+	width: 48px;
+	height: 64px;
+	cursor: default;
+    top: -22px;
+    position: absolute;
+    pointer-events: none;
+}
+
+.map-tile-info{
+	width: 100%;
+	height: 100%;
+	cursor: default;
+	font-size: 9px;
+	position: absolute;
+    top: 14px;
+    text-align: center;
+    pointer-events: none;
+	color: white;
+}
+.map-tile-title{
+	width: 160%;
+	left: -30%;
+	cursor: default;
+	font-size: 10px;
+	font-weight: bold;
+	position: absolute;
+    top: -25px;
+    text-align: center;
+    pointer-events: none;
+	color: white;
+	background-color: $dark-blue$;
+}
+
+.ui-arrow-up, .ui-arrow-right, .ui-arrow-down, .ui-arrow-left {
+  background-image: url('./img/map/arrows.png');
+  background-repeat: no-repeat;  
+  position: absolute;
+}
+.ui-arrow-right {
+  width: 38px;
+  height: 42px;
+  background-position: -0px -0px;
+}
+.ui-arrow-left {
+  width: 38px;
+  height: 42px;
+  background-position: -38px -0px;
+}
+.ui-arrow-up {
+  width: 42px;
+  height: 38px;
+  background-position: -76px -0px;
+}
+.ui-arrow-down {
+  width: 42px;
+  height: 38px;
+  background-position: -118px -0px;
+}
+.ui-arrow-right:hover {
+  background-position-y: -42px;
+}
+.ui-arrow-left:hover {
+  background-position-y: -42px;
+}
+.ui-arrow-up:hover {
+  background-position-y: -38px;
+}
+.ui-arrow-down:hover {
+  background-position-y: -38px;
+}
