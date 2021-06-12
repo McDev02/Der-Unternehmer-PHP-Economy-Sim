@@ -2,7 +2,7 @@
 An unfinished economy simulation written in PHP. My PHP knowledge is basic and old but maybe it is interesting for someone. This project is not going to be developed further.
 
 ## Playtest
-Create a new account to see how the introduction works. But appart from that there is no much content in the game.
+Create a new account to see how the introduction works. But appart from that there is no much content in the game except the random map generator.
 
 ## Admin Account Login
 Username: admin
